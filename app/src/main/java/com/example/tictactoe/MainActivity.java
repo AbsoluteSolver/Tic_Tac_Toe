@@ -1,9 +1,7 @@
 package com.example.tictactoe;
 
-import android.content.res.ColorStateList;
-import android.graphics.drawable.BitmapDrawable;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -38,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_FULLSCREEN |
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+         
         cross_turn = true;
         btn1 = findViewById(R.id.imageButton1);
         btn2 = findViewById(R.id.imageButton2);
